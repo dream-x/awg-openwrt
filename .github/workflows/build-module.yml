@@ -48,7 +48,12 @@ jobs:
     needs: generate-config
     strategy:
       matrix:
-        build_env: ${{ fromJson(needs.generate-config.outputs.job-config) }}
+        build_env: 
+          - tag: '23.05.4'
+            pkgarch: 'aarch64_cortex-a53'
+            target: 'mediatek'
+            subtarget: 'mt7986'
+            vermagic: '5.4.238'
       fail-fast: false
 
     steps:
