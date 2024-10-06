@@ -53,7 +53,7 @@ jobs:
             pkgarch: 'aarch64_cortex-a53'
             target: 'mediatek'
             subtarget: 'mt7986'
-            vermagic: '5.4.238'
+            vermagic: 'd4a7d36962bb6218ebd94bf040ac560e'
       fail-fast: false
 
     steps:
